@@ -798,100 +798,29 @@ table.issues td.description pre, table.issues td.last_notes pre {
 
 // Issue priority colors from Circle Theme (http://www.redminecrm.com/pages/circle-theme)
 table.issues {
-  .priority-highest {
+  .priority-highest .priority,
+  .priority-highest .checkbox
+  {
     color: #900;
-
-    &.odd {
-      background-color: #ffe2e2;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    &.even {
-      background-color: #faefef;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    a, &:hover a {
-      color: #900;
-    }
+    background-color: #ffc6c6;
+    font-weight: bold;
   }
 
-  .priority-high2 {
-    color: #900;
-
-    &.odd {
-      background-color: #ffe2e2;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    &.even {
-      background-color: #faefef;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    a, &:hover a {
+  .priority-high2 .priority,
+  .priority-high2 .checkbox{
       color: #900;
-    }
+      background-color: #ffdcdc;
   }
 
-  .priority-high3 {
-    color: #900;
-
-    &.odd {
-      background-color: #ffeeee;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    &.even {
+  .priority-high3 .priority,
+  .priority-high3 .checkbox{
+      color: #900;
       background-color: #fff2f2;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    a, &:hover a {
-      color: #900;
-    }
   }
-
-  .priority-lowest {
-    color: #559;
-
-    &.odd {
-      background-color: #eaf7ff;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    &.even {
-      background-color: #f2faff;
-
-      &:hover {
-        background-color: #dfeff7;
-      }
-    }
-
-    a, &:hover a {
+  .priority-lowest .priority,
+  .priority-lowest .checkbox{
       color: #559;
-    }
+      background-color: #eaf7ff;
   }
 }
 
