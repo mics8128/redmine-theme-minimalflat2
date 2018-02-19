@@ -37,8 +37,8 @@
     "release:copy-src": "cpx \"./src/assets/**/*(theme.js|favicon.ico|icon.svg|icon.eot|icon.ttf|icon.woff|!(*.*))\" ./minimalflat2",
     "release:copy-img": "cpx \"./src/assets/images/*.*\" ./minimalflat2/images",
     "release:copy-doc": "cpx \"./*(CHANGELOG.md|LICENSE.txt|!(Vagrantfile|*.*))\" ./minimalflat2",
-    "release:archive": "cross-conf-env bestzip minimalflat2-npm_package_version.zip ./minimalflat2",
-    "release": "npm-run-all -s release:clean release:mkdir release:copy-* release:css* release:archive"
+    "release:gh-pages": "gh-pages -b deploy -d ./minimalflat2",
+    "release": "npm-run-all -s release:clean release:mkdir release:copy-* release:css* release:gh-pages"
   },
   "dependencies": {
     "normalize.css": "^7.0.0"
@@ -48,6 +48,7 @@
     "browser-sync": "^2.23.5",
     "cpx": "^1.5.0",
     "cross-conf-env": "^1.1.2",
+    "gh-pages": "^1.1.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
